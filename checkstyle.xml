@@ -41,6 +41,8 @@
             <property name="ignorePattern" value="^package.*|^import.*|a href|href|http://|https://|ftp://"/>
         </module>
         <module name="AvoidStarImport"/>
+        <module name="UnusedImports"/>
+        <module name="RedundantImport"/>
         <module name="OneTopLevelClass"/>
         <module name="NoLineWrap"/>
         <module name="EmptyBlock">
@@ -68,6 +70,7 @@
             <message key="ws.notPreceded"
                      value="WhitespaceAround: ''{0}'' is not preceded with whitespace."/>
         </module>
+        <module name="SingleSpaceSeparator"/>
         <module name="OneStatementPerLine"/>
         <module name="MultipleVariableDeclarations"/>
         <module name="ArrayTypeStyle"/>
@@ -210,6 +213,8 @@
         <module name="SingleLineJavadoc">
             <property name="ignoreInlineTags" value="false"/>
         </module>
+        <module name="EmptyStatement"/>
+        <module name="StringLiteralEquality"/>
         <module name="EmptyCatchBlock">
             <property name="exceptionVariableName" value="expected"/>
         </module>
