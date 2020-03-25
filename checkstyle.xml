@@ -208,6 +208,11 @@
         <module name="EmptyCatchBlock">
             <property name="exceptionVariableName" value="expected"/>
         </module>
+        <module name="RegexpSinglelineJava">
+            <property name="format" value="\.printStackTrace\(\)"/>
+            <property name="ignoreComments" value="true"/>
+            <property name="message" value="Using e.printStackTrace() is forbidden. Rethrow, log or handle the exception."/>
+        </module>
 
         <!-- Javadoc/Comments -->
         <module name="CommentsIndentation"/>
